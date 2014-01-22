@@ -1,0 +1,181 @@
+
+
+
+<!-- Controls for EchoNest Genre param -->
+<!-- Not needed here - genre is covered by 'description' -->
+<!--
+<div id="option-genre-label">Genre</div>
+<select id="option-genre">
+    <option value="">All</option>
+</select>
+-->
+
+
+<!-- Controls for EchoNest Results param -->
+<div id="option-results-label">Playlist Length</div>
+<!--<input type="text" id="results-text" placeholder="How Many Songs Do You Want?...">-->
+<label for="results-level">Number Of Songs</label>
+<div id="results-level">15</div>
+<div id="results-slider"></div>
+
+
+<!-- Controls for EchoNest Variety param -->
+<div id="option-variety-label">Variety</div>
+<label for="variety-level">Level</label>
+<div id="variety-level">0.5</div>
+<div id="variety-slider"></div>
+
+
+<!-- Controls for EchoNest Description param -->
+<div id="option-description-label">Description</div>
+<input type="text" id="description-autocomplete" placeholder="Enter Description Here...">
+<ul id="description-container"></ul>
+
+
+<!-- Controls for EchoNest Mood param -->
+<div id="option-mood-label">Mood</div>
+<input type="text" id="mood-autocomplete" placeholder="Enter Mood Here...">
+<ul id="mood-container"></ul>
+
+
+<!-- Controls for EchoNest Artist Max Familiarity param -->
+<!--
+<div id="artist_max_familiarity_container" style="display: none">
+<div id="option-artist-max-fam-label">Artist Max Familiarity</div>
+<label for="artist-max-fam-level">Level</label>
+<div id="artist-max-fam-level">0.5</div>
+<div id="artist-max-fam-slider"></div>
+</div>
+-->
+
+<!-- Controls for EchoNest Artist Min Familiarity param -->
+<!--
+<div id="artist_min_familiarity_container" style="display: none">
+    <div id="option-artist-min-fam-label">Artist Min Familiarity</div>
+    <label for="artist-min-fam-level">Level</label>
+    <div id="artist-min-fam-level">0.5</div>
+    <div id="artist-min-fam-slider"></div>
+</div>
+-->
+
+
+<!-- Controls for EchoNest Artist Familiarity param -->
+<div id="artist_familiarity_container" style="display: none">
+    <div id="option-artist-familiarity-label">Artist Familiarity</div>
+    <label for="artist-familiarity-amount">Range:</label>
+    <input type="text" id="artist-familiarity-amount">
+    <div id="artist-familiarity-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Tempo param -->
+<div id="tempo_container" style="display: none">
+    <div id="option-tempo-label">Tempo</div>
+    <!--
+    <label for="tempo-min-level">Min BPM</label>
+    <div id="tempo-min-level">0.0</div>
+    <label for="tempo-max-level">Max BPM</label>
+    <div id="tempo-max-level">500.0</div>
+    -->
+    <label for="tempo-amount">Tempo Range:</label>
+    <input type="text" id="tempo-amount">
+    <div id="tempo-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Duration param -->
+<div id="duration_container" style="display: none">
+    <div id="option-duration-label">Duration</div>
+    <label for="duration-amount">Duration Range:</label>
+    <input type="text" id="duration-amount">
+    <div id="duration-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Danceability param -->
+<div id="danceability_container" style="display: none">
+    <div id="option-danceability-label">Danceability</div>
+    <label for="danceability-amount">Danceability Range:</label>
+    <input type="text" id="danceability-amount">
+    <div id="danceability-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Energy param -->
+<div id="energy_container" style="display: none">
+    <div id="option-energy-label">Energy</div>
+    <label for="energy-amount">Energy Range:</label>
+    <input type="text" id="energy-amount">
+    <div id="energy-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Liveness param -->
+<div id="liveness_container" style="display: none">
+    <div id="option-liveness-label">Liveness</div>
+    <label for="liveness-amount">Liveness Range:</label>
+    <input type="text" id="liveness-amount">
+    <div id="liveness-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Speechiness param -->
+<div id="speechiness_container" style="display: none">
+    <div id="option-speechiness-label">Speechiness</div>
+    <label for="speechiness-amount">Speechiness Range:</label>
+    <input type="text" id="speechiness-amount">
+    <div id="speechiness-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Artist Hotttnesss param -->
+<div id="artist_hotttnesss_container" style="display: none">
+    <div id="option-artist_hotttnesss-label">Artist Hotttnesss</div>
+    <label for="artist_hotttnesss-amount">Artist Hotttnesss Range:</label>
+    <!--<input type="text" id="hotttnesss-amount"> Change these to div's instead of text inputs-->
+    <div id="artist_hotttnesss-amount"></div>
+    <div id="artist_hotttnesss-slider"></div>
+</div>
+
+
+<!-- Controls for EchoNest Song Hotttnesss param -->
+<div id="song_hotttnesss_container" style="display: none">
+    <div id="option-song_hotttnesss-label">Song Hotttnesss</div>
+    <label for="song_hotttnesss-amount">Song Hotttnesss Range:</label>
+    <!--<input type="text" id="hotttnesss-amount"> Change these to div's instead of text inputs-->
+    <div id="song_hotttnesss-amount"></div>
+    <div id="song_hotttnesss-slider"></div>
+</div>
+
+
+
+<!-- Table of buttons to specify which additional params, if any, user wants to include in query -->
+<table border="1">
+    <tr>
+        <thead>Click To Add More Customization</thead>
+    </tr>
+    <tr>
+        <td id="artist_familiarity" class="ENParamButton">Artist Familiarity</td>
+        <td id="liveness" class="ENParamButton">Liveness</td>
+        <td id="tempo" class="ENParamButton">Tempo</td>
+    </tr>
+    <tr>
+        <td id="duration" class="ENParamButton">Duration</td>
+        <td id="danceability" class="ENParamButton">Danceability</td>
+        <td id="energy" class="ENParamButton">Energy</td>
+    </tr>
+    <tr>
+        <td id="speechiness" class="ENParamButton">Speechiness</td>
+        <td id="artist_hotttnesss" class="ENParamButton">Artist Hotttnesss</td>
+        <td id="song_hotttnesss" class="ENParamButton">Song Hotttnesss</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+<div class="button" id="createENPlaylist">Create Playlist</div>

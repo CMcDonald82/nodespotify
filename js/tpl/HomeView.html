@@ -1,0 +1,59 @@
+
+
+
+
+
+    <!--
+    <iframe src="https://embed.spotify.com/?&theme=black&view=list&uri=spotify:trackset:NEW Artist Playlist:1w8gsT5RBrFfTrLYhDRJIk,492pTG1PRRakuw3Z0fDipU,0AEZJzuERIeABMw9kYbwvj,29xKs5BAHlmlX1u4gzQAbJ,1d7upyP1a3Zrds4MEWDiWf,3oM0sxN8FZwgUvccT9n34d,4YwLagaVWaegNK7RsUh1at,2wbACYV9osqiAfBhE3Fdct,2b8GjnBA7mQdQDebBijIsX,2Hy69dQwXzpfQqVhXLflQM,1K8dv03x7iQP19GD1Cv5YI,6rtXTBm0GqZHL3BHvBwk7I,2UKuqcPkbpcQEXaTIMUJXn,6rvz492GKuUEsvKbJhxIRn,6UPn2TaUKoaZHGSTjaZK06,5jmCLMYTmFZExXRefwMTiC,3zHGYbtWOjzCOyRhUXHKPF,2cDLsLiUxF4cHDNuALZDQi,3rtJhrxsDUtq1jW9O4hbOD,3mtD9289UiIcGWu6BOvS1t" width="300" height="380" frameborder="0" allowtransparency="true" id="playlistPlayer"></iframe>
+    -->
+
+    <!--
+    <iframe src="https://embed.spotify.com/?uri=spotify:trackset::4bz7uB4edifWKJXSDxwHcs" width="300" height="380" frameborder="0" allowtransparency="true" autofocus></iframe>
+    -->
+
+    <!--
+    <div id="login" class="testButton button">Login</div>
+    <div id="logout" class="testButton button">Logout</div>
+    <div id="account" class="testButton button">Account</div>
+    <div id="register" class="testButton button">Sign Up</div>
+    -->
+
+
+    <div id="userPlaylists">
+        <!--<option value=" ">No Playlist Selected</option>-->
+    </div>
+    <div id="playCenter" class="row clearfix">
+        <div id="playCenterHeader" class="row clearfix">
+        </div>
+        <div id="resultsContainer" class="six columns alpha">
+            <div class="playCenterHeaderRow">CURRENT PLAYLIST</div>
+            <div id="results" class="six columns alpha">
+                <div id="iframePlaceholder">NO PLAYLIST SELECTED</div>
+            </div>
+
+        </div>
+        <div id="playlistControlPanel">
+
+        </div>
+        <div id="selectedPlaylistTitle"></div>
+        <div id="playlistEditor" class="ten columns omega">
+            <%- editor_status %>
+        </div>
+
+    </div>
+
+    <select id="topTenGenres">
+        <option value="all" selected="selected">All</option>
+        <option value="rock">Rock</option>
+        <option value="blues">Blues</option>
+        <option value="rap">Rap</option>
+        <option value="electronic">Electronic</option>
+        <option value="classical">Classical</option>
+    </select>
+    <label for="topTenList1">Hot Tracks</label>
+    <div id="topTenList1" class="topTenContainer"></div>
+    <label for="topTenList2">Hot Artists You've Never Heard Of</label>
+    <div id="topTenList2" class="topTenContainer"></div>
+    <label for="topTenList3">Hip Styles</label>
+    <div id="topTenList3" class="topTenContainer"></div>
+

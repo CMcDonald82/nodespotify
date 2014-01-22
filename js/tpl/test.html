@@ -1,0 +1,195 @@
+
+
+<header id="header">
+    <input type="hidden" id="_csrf" value="<%= token %>"/>
+    <div class="container">
+    <!--<div id="navbar" class="sixteen columns">-->
+        <!--<div class="row">-->
+        <div class="four columns"><h1>Boomin'</h1></div>
+
+        <div id="authPanel" class="twelve columns"></div>
+
+        <!--<div class="button" id="test">Test</div>-->
+        <!--<a class="button" href="#search">Search Link Test</a>
+        <div id="test" class="button">Click Test</div>-->
+
+        <!--<div class="button searchArtist">Artist Search Test</div>-->
+        <!--</div>-->
+        <!--<div class="three columns"><div class="button" id="about">About</div></div>-->
+    </div>
+    <!--</div>-->
+
+    <div class="container">
+    <div class="sixteen columns">
+        <div class="row">
+            <input id="song" type="text" placeholder="Search for a song or artist..." autofocus />
+
+    </div>
+    </div>
+    </div>
+
+
+    <!--</div>-->
+
+</header>
+
+<!-- section for drawing the boombox -->
+<section>
+
+    Draw Here
+
+    <div class="test"><a>MEDIA QUERY TEST</a></div>
+    <div id="boxContainer">
+
+        <div id="handle"></div>
+        <div id="boombox-container">
+            <div id="top-panel-container">
+
+                <div class="square-tweeter-container-left">
+                    <div class="square-tweeter">
+                        <div class="tweeter_vert"></div>
+                        <div class="tweeter_horiz"></div>
+                    </div>
+                </div>
+                <div id="radio_dial_container">
+                    <div id="radio_dial"></div>
+                </div>
+                <div id="radio_tuner">
+                    <div id="radio_indicator"></div>
+                    <div class="radio_line"></div>
+                    <div class="radio_line"></div>
+                    <div class="radio_line"></div>
+                    <div id="button-row">
+                        <div class="boombox_button"><div class="play"></div></div>
+                        <div class="boombox_button"><div class="stop"></div></div>
+                        <div class="boombox_button"><div class="rewind"></div><div class="rewind2"></div></div>
+                        <div class="boombox_button"><div class="ff"></div><div class="ff2"></div></div>
+                        <div class="boombox_button"><div class="eject"></div><div class="eject2"></div></div>
+                    </div>
+
+                </div>
+                <div class="square-tweeter-container-right">
+                    <div class="square-tweeter">
+                        <div class="tweeter_vert"></div>
+                        <div class="tweeter_horiz"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom-panel-container">
+                <div class="speakerbox-left">
+                    <div class="speaker-rim">
+                        <div class="speaker"></div>
+                    </div>
+                </div>
+                <!-- This is where to put the fake tapedeck panel that displays when Spotify player is not shown -->
+                <div id="tapedeck-container">
+                    <div id="results">
+                        <div id="tapedeck-skin">
+                            <div id="ipod-screen"> <!-- Only visible when ipod design is shown (on tablets & phones) -->
+                                <!-- line items for screen go here -->
+                                <div id="ipod-screen-header"><span id="ipod-logo">iPod</span><div id="ipod-battery-icon"></div></div>
+                                <div class="ipod-line-item-selected"><span class="ipod-line-item-selected-text">Music</span></div>
+                                <div class="ipod-line-item"><span class="ipod-line-item-text">Photos</span></div>
+                                <div class="ipod-line-item"><span class="ipod-line-item-text">Extras</span></div>
+                                <div class="ipod-line-item"><span class="ipod-line-item-text">Settings</span></div>
+                                <div class="ipod-line-item"><span class="ipod-line-item-text">Shuffle Songs</span></div>
+                            </div>
+                            <div id="ipod-wheel"> <!-- Only visible when ipod design is shown (on tablets & phones) -->
+                                <div id="ipod-play-icon"></div><div id="ipod-pause-icon"></div>
+                                <div id="ipod-back-icon"></div><div id="ipod-back-icon2"></div>
+                                <div id="ipod-forward-icon"></div><div id="ipod-forward-icon2"></div>
+                                <div id="ipod-menu-icon">MENU</div>
+                                <div id="ipod-wheel-button"></div>
+                            </div> <!-- Only visible when ipod design is shown (on tablets & phones) -->
+                            <div id="tapedeck">
+                                <div id="tapedeck-window">
+                                    <div id="tapedeck-reel">
+                                        <div id="tapedeck-reel-head-left"></div>
+                                        <div id="tapedeck-reel-mid"></div>
+                                        <div id="tapedeck-reel-head-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="metalplaque">LOGO</div>
+                        </div>
+
+                    </div>
+                    <div id="boombox-logo">JVC</div>
+                </div>
+                <div class="speakerbox-right">
+                    <div class="speaker-rim">
+                        <div class="speaker"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="main">
+    <!--
+    <div id="content"></div>
+    <div id="spotifyPlayerPanel">
+        <div id="resultsContainer" class="six columns alpha">
+            <div class="playCenterHeaderRow">CURRENT PLAYLIST</div>
+            <div id="results" class="six columns alpha">
+                <div id="iframePlaceholder">NO PLAYLIST SELECTED</div>
+            </div>
+
+        </div>
+    </div>
+    -->
+
+    <div id="playlistControlPanel"></div>
+
+    <!-- This is the container that will hold either the EchoNest playlist options or the options for creating a new blank custom playlist -->
+    <div id="newPlaylistOptions"></div>
+
+    <!-- New area for custom playlists to display - now separate from search results -->
+    <div id="sortableCustomPlaylistTitle"></div>
+    <div id="sortableCustomPlaylist"></div>
+    
+    <!--
+    <div id="sortablePlaylistTest">
+        <ul id="sortable">
+            <li class="ui-state-default" id="5176ab7876e71d8f01000001"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Track 1</li>
+            <li class="ui-state-default" id="5176ab7c76e71d8f01000002"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Track 2</li>
+            <li class="ui-state-default" id="5176b0e676e71d8f01000003"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Track 3</li>
+            <li class="ui-state-default" id="52d5ea5d3173de6e06000001"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Track 4</li>
+            <li class="ui-state-default" id="52d5eacf1b81407306000001"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Track 5</li>
+        </ul>
+    </div>
+    -->
+
+    <div id="mainPanel">TEST
+        <!--<div class="absolute-center">Main Content Goes Here</div>-->
+    </div>
+    <div id="moreResults" class="hidden">
+
+        <h4 id="moreResultsLabel">More</h4>
+        <h3 class="moreResultsArrow"></h3>
+    </div>
+    <div id="pagination"></div>
+
+    <div id="topTenGenreSelectionBar">
+        <h4>Select Top 10 Genre</h4>
+        <select id="topTenGenres">
+            <option value="all" selected="selected">All</option>
+            <option value="rock">Rock</option>
+            <option value="blues">Blues</option>
+            <option value="rap">Rap</option>
+            <option value="electronic">Electronic</option>
+            <option value="classical">Classical</option>
+        </select>
+    </div>
+    <div id="topTenPanel1"></div>
+    <div id="topTenPanel2"></div>
+    <div id="topTenPanel3"></div>
+
+</section>
+
+
+<footer class="footer"></footer>
+
+
